@@ -17,8 +17,8 @@ static void __exit my_exit (void)
 	printk (KERN_INFO "foo = %d\n", foo);
 }
 
-/*module_init (my_init);*/
-/*module_exit (my_exit);*/
+module_init (my_init);
+module_exit (my_exit);
 
 MODULE_AUTHOR ("David Albert");
 MODULE_LICENSE ("GPL v2");
